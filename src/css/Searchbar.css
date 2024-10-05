@@ -1,0 +1,63 @@
+/* src/css/SearchBar.css */
+
+.search-bar {
+    display: flex;
+    z-index: 1;
+    position: relative;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;
+    top: 10px; 
+    padding: 10px;
+    width: 100%; /* Full width of the container */
+}
+
+.search-bar input {
+    padding: 12px 20px;
+    border: 3px solid #122430;; /* Deep Blue border */
+    border-radius: 50px; /* Rounded left right corners */
+    font-size: 16px;
+    color: #ffffff; 
+    background-color: #1f3b4d; /* Deep Blue background */
+    width: 350px; 
+    height: 40px;
+    font: 'Arial';
+}
+
+.search-bar input::placeholder {
+    color: #ffffff; /* Soft Gold placeholder text */
+    font-size: 20px;
+}
+
+.search-bar input:focus {
+    border-color: #f0c27b; /* Soft Gold border on focus */
+}
+
+
+.search-bar button {
+
+    z-index: 1;
+    right: 510px;
+    position: absolute;
+    background-color: #f0c27b; /* Soft Gold background */
+    color: #1f3b4d; /* Deep Blue text */
+    border-radius: 50%; /* Make the button circular */
+    width: 50px; /* Set width for the circle */
+    height: 50px; /* Set height for the circle */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+}
+
+.search-bar button:hover {
+    background-color:#eb9f2d; 
+    color: #f0c27b; /* Soft Gold text on hover */
+}
+
+.search-bar button:active {
+    background-color: #f0c27b;
+}
+
+.search-bar button i {
+    font-size: 20px; /* Size of the icon */
+}
