@@ -1,0 +1,60 @@
+.container {
+    padding: 20px; /* Space around the container */
+    background-color: rgba(31, 59, 77, 0.8); /* Deep Blue with transparency */
+    backdrop-filter: blur(5px); /* Slight blur effect for a modern touch */
+    z-index: 2; /* Ensure it's above the navbar */
+    position: absolute; /* Allow the container to be positioned at the left edge */
+    left: 0; /* Align the container to the left of the page */
+    display: flex; /* Center align categories */
+    height: 40px; /* Fixed height for container */
+    margin: 20px 0; /* Adjust top and bottom margins, remove left and right margins */
+    width: 1340px; /* Keep the fixed width */
+    justify-content: center; /* Center categories */
+    align-items: center; /* Center items vertically */
+}
+
+
+.categor {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Use flexbox for horizontal layout */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    gap: 30px; /* Space between items */
+}
+
+.cat {
+    position: relative; /* Allow positioning of the icon and text */
+    background-color: transparent; /* No background for category items */
+    color: #f4f4f9; /* Light Gray text color */
+    padding: 15px; /* Padding for category item */
+    text-align: center; /* Center text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    display: flex; /* Use flexbox for item layout */
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center align icon and text */
+    height: 100%; /* Ensure it takes full height */
+}
+
+/* Styles for the icon and name alignment */
+.cat i {
+    font-size: 30px; /* Icon size */
+    margin-bottom: 5px; /* Space between icon and text */
+    color: #f0c27b; /* Soft Gold for icons */
+}
+
+.cat-name {
+    font: 'Arial'; /* Bold text */
+    font-size: 16px; /* Text size */
+}
+
+/* Hover effect for category items */
+.cat:hover {
+    color: #f0c27b; /* Soft Gold text on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Optional: Active state */
+.cat:active {
+    transform: translateY(0); /* Reset on active */
+}
