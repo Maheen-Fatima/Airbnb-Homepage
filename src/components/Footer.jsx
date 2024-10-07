@@ -11,6 +11,7 @@ function Footer() {
         <a href="/community">Community</a>
         <a href="/hosting">Hosting</a>
         <a href="/about">About</a>
+
       </div>
       <div className="footer-socials">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -24,7 +25,7 @@ function Footer() {
         </a>
       </div>
       <div className="footer-copyright">
-        <p>© 2024 Your Company Name. All rights reserved.</p>
+        <p>© 2024 Your Company Name. All rights reserved</p>
       </div>
     </footer>
   );
