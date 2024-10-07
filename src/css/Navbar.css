@@ -1,19 +1,19 @@
 
 .navbar {
     display: flex;
-    position: fixed;
+    position: fixed; /* Keep the navbar fixed */
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
     background-color: #1f3b4d; /* Deep Blue */
-    top: 0px;
-    margin: 0px;
-    height: 50px;
-    width: 1286px;
-   /* nav bar will stay on top, will not come alon as I scroll down*/
-    z-index: 1000; /* if 2 elements overlap, the one with a higher z-index value will be displayed on top*/
-   
-  }
+    top: 0;
+    left: 0;
+    right: 0; /* Ensure it spans the full width */
+    height: 80px;
+    z-index: 100000000;
+}
+
+  
   
   .navbar-logo {
     font-size: 28px;
@@ -82,7 +82,7 @@
   .navbar-user-menu
   {
     position: absolute;
-    right: 10px;
+    right:90px;
   }
   .navbar-user-menu button:hover {
     background-color: #f0c27b;

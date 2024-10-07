@@ -1,0 +1,67 @@
+/* src/css/listingCard.css */
+
+.listing-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 293px; 
+    margin: 15px; /* Margin around cards, this is fine */
+    z-index: 1;
+}
+
+.listing-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.listing-card-image {
+    width: 100%; /* Full width for the image */
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+.listing-card-details {
+    padding: 15px;
+}
+
+.listing-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1f3b4d; /* Deep Blue */
+}
+
+.listing-card-type {
+    font-size: 14px;
+    color: #f0c27b; /* Soft Gold */
+    margin: 5px 0;
+}
+
+.listing-card-info {
+    font-size: 14px;
+    color: #1f3b4d; /* Deep Blue */
+    margin-bottom: 10px;
+}
+
+.listing-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd; /* Divider line */
+    padding-top: 10px;
+}
+
+.listing-card-price {
+    font-size: 16px;
+    color: #1f3b4d; /* Deep Blue */
+    font-weight: bold;
+}
+
+.listing-card-rating {
+    font-size: 16px;
+    color: #f0c27b; /* Soft Gold */
+    font-weight: bold;
+}

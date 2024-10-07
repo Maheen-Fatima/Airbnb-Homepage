@@ -1,0 +1,56 @@
+/* src/css/Homepage.css */
+
+.homepage {
+  
+  flex-direction: column; /* Stack elements vertically */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  min-height: 100vh; /* Full height for homepage */
+  
+  /* Background image styles */
+  background-image: url('../assets/picture.jpg'); /* Add your background image */
+  background-size: cover; /* Ensure the background image covers the entire area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+
+.listing-container {
+  flex-grow: 1; /* Allow this section to grow */
+  display: flex; /* Use flexbox for the listing container */
+  justify-content: flex-start; /* Align items to the start horizontally */
+  align-items: flex-start; /* Align items to start vertically */
+  padding: 0; /* Remove padding to eliminate extra space */
+  margin-top: 100px; /* Margin on top */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  margin-left: 25px; 
+  
+  position: relative; /* Relative positioning to ensure it overlays properly */
+  z-index: 10000; /* Ensure it appears above the background */
+  
+  /* Set height between 300px to 600px */
+  height: 365px; /* Initial height, you can adjust as needed */
+  max-height: 600px; /* Maximum height */
+}
+
+.listing-card-container {
+  display: grid; /* Use grid for card layout */
+  grid-template-columns: repeat(4, 1fr); /* Set 4 columns */
+  width: 100%; /* Full width */
+  max-width: 1300px; /* Maximum width for the container */
+  margin: 0; /* No margin to avoid extra space */
+  padding: 0; /* Remove padding to avoid extra space */
+  gap: 7px; /* Space between cards */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Responsive adjustments */
+@media (max-height: 600px) {
+  .listing-container {
+    height: auto; /* Allow height to adjust if below 600px */
+  }
+}
+
+@media (min-height: 300px) and (max-height: 600px) {
+  .listing-container {
+    height: 100%; /* Allow to fill the container */
+  }
+}

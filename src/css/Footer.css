@@ -1,0 +1,38 @@
+/* Footer.css */
+.footer {
+  position: relative; /* Ensure footer is part of the document flow */
+  width: 1400px; /* Full width */
+  background-color: rgba(31, 59, 77, 0.8); /* Background color */
+  color: #fff; /* White text */
+  padding: 5px; /* Padding */
+  text-align: center; /* Center text */
+  z-index: 1000; /* Layering */
+  height: 110px; /* Fixed height */
+  margin: 0; /* No margin below */
+  overflow: hidden; /* Prevent horizontal overflow in footer */
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+
+
+
+.footer-links {
+  font-size: 15px;
+  margin-bottom: 15px; /* Space below the links */
+}
+
+.footer-links a {
+  color: #fff; /* White text for links */
+  margin: 0 15px; /* Space between links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer-socials a {
+  color: #fff; /* White icons */
+  margin: 0 10px; /* Space between icons */
+  font-size: 18px; /* Increase icon size */
+}
+
+.footer-copyright {
+  margin-top: 15px; /* Space above copyright text */
+}

@@ -1,48 +1,51 @@
 /* src/css/SearchBar.css */
 
 .search-bar {
+    flex-grow: 1; /* Allow this section to grow */
+    display: flex; /* Use flexbox for the listing container */
+    overflow-x: hidden; /* Prevent horizontal overflow */
     display: flex;
     z-index: 1;
-    position: relative;
+    position:relative; /* Change from relative to fixed */
     justify-content: center; /* Center the items horizontally */
     align-items: center;
-    top: 10px; 
+    top: 80px;  /* Keep it 10px from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
     padding: 10px;
-    width: 100%; /* Full width of the container */
+    width: auto; /* Change to auto to better fit the container */
 }
 
 .search-bar input {
     padding: 12px 20px;
-    border: 3px solid #122430;; /* Deep Blue border */
-    border-radius: 50px; /* Rounded left right corners */
+    border: 3px solid #122430; /* Deep Blue border */
+    border-radius: 50px; /* Rounded left and right corners */
     font-size: 16px;
     color: #ffffff; 
     background-color: #1f3b4d; /* Deep Blue background */
     width: 350px; 
-    height: 40px;
-    font: 'Arial';
+    height: 50px;
+    font-family: 'Arial'; /* Corrected to font-family */
 }
 
 .search-bar input::placeholder {
     color: #ffffff; /* Soft Gold placeholder text */
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .search-bar input:focus {
     border-color: #f0c27b; /* Soft Gold border on focus */
 }
 
-
 .search-bar button {
-
     z-index: 1;
-    right: 510px;
-    position: absolute;
+    position: absolute; /* Keep the button absolute for positioning */
+    right:38%; /* Adjust position of the button as needed */
     background-color: #f0c27b; /* Soft Gold background */
     color: #1f3b4d; /* Deep Blue text */
     border-radius: 50%; /* Make the button circular */
-    width: 50px; /* Set width for the circle */
-    height: 50px; /* Set height for the circle */
+    width: 40px; /* Set width for the circle */
+    height: 40px; /* Set height for the circle */
     cursor: pointer; /* Pointer cursor on hover */
     display: flex; /* Use flexbox for centering */
     justify-content: center; /* Center icon horizontally */
@@ -50,7 +53,7 @@
 }
 
 .search-bar button:hover {
-    background-color:#eb9f2d; 
+    background-color: #eb9f2d; 
     color: #f0c27b; /* Soft Gold text on hover */
 }
 
