@@ -97,7 +97,7 @@ function Homepage() {
             image={image8} // Picturesque Rural Retreat
             title="Picturesque Rural Retreat"
             type="Entire home"
-            guests={5}
+            guests={7}
             bedrooms={3}
             bathrooms={2}
             price={140}
