@@ -1,0 +1,14 @@
+
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit; /* Set box-sizing for all elements */
+  }
+  
