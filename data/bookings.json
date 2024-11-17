@@ -1,0 +1,14 @@
+[
+  {
+    "listingId": 1,
+    "customerName": "John Doe",
+    "checkInDate": "2024-12-01",
+    "checkOutDate": "2024-12-10"
+  },
+  {
+    "listingId": 2,
+    "customerName": "Maheen Fatima",
+    "checkInDate": "2024-12-01",
+    "checkOutDate": "2024-12-10"
+  }
+]
