@@ -54,7 +54,7 @@ app.get("/api/listings/:id", (req, res) => {
 app.get("/api/bookings", (req, res) => {
   fs.readFile(bookingsPath, (err, data) => {
     if (err) {
-      return res.status(500).json({ message: "Error reading bookings file" });
+      return res.status(500).json({ message: "Error reading bookingss file" });
     }
     const bookings = JSON.parse(data);
     res.json(bookings);  // Send the bookings data
@@ -66,7 +66,7 @@ app.post("/api/bookings", (req, res) => {
   const newBooking = req.body;  // Get the booking data from the request body
 
   if (!newBooking || !newBooking.listingId || !newBooking.customerName || !newBooking.checkInDate || !newBooking.checkOutDate) {
-    return res.status(400).json({ message: "Missing required booking fields" });
+    return res.status(400).json({ message: "Missing required booking fieldss" });
   }
 
   // Read current bookings
