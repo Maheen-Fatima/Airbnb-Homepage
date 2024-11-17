@@ -11,7 +11,7 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
-// Routes
+// Routess
 app.get("/", (req, res) => {
   res.send("Airbnb API is running!");
 });
