@@ -1,0 +1,232 @@
+/* General Page Styling */
+body {
+  background: linear-gradient(135deg, #2c4f64, #fad0c4); /* Soft Gradient */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333; /* Dark text for better readability */
+}
+
+/* Listing Detail Container */
+.listing-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card Styling */
+.listing-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Reduced max-width */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+}
+
+/* Details Section */
+.details-section {
+  padding: 20px;
+  text-align: center;
+  background: #fafafa;
+  border-radius: 16px;
+  box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.listing-title {
+  font-size: 2.5rem;
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.listing-location {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.listing-attributes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.listing-price {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #21475f;
+  margin-bottom: 20px;
+}
+
+/* Updated Rating Section */
+.listing-rating {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+ 
+  position: relative;
+  padding-left: 1.5rem; /* Adds space for the stars to align properly */
+}
+
+.listing-rating::before {
+  content: "★★★★★"; /* 5 stars, all initially filled */
+  font-family: 'Arial', sans-serif;
+  color: #ffcc00; /* Gold color for filled stars */
+  font-size: 1.8rem; /* Slightly larger stars */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for effect */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.listing-rating span {
+  display: block;
+  font-family: 'Arial', sans-serif;
+  content: "☆☆☆☆☆"; /* 5 empty stars */
+  color: #ddd; /* Light gray for empty stars */
+  font-size: 1.8rem;
+}
+
+.listing-rating span::before {
+  content: "★★★☆☆"; /* Custom content for 3 stars filled */
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffcc00; /* Gold color for filled stars */
+  font-size: 1.8rem;
+  line-height: 0;
+}
+
+/* Amenities Section */
+.listing-amenities {
+  margin-top: 20px;
+  text-align: left;
+  padding: 10px 20px;
+  background: rgba(33, 71, 95, 0.7); /* Semi-transparent background */
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  color: #fff; /* Adjust text color for contrast */
+}
+
+.listing-amenities h3 {
+  font-size: 1.6rem; /* Slightly larger for emphasis */
+  font-weight: 700; /* Bold font for headings */
+  color: #ffffff; /* Contrast with the dark background */
+  margin-bottom: 12px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add stylish text shadow */
+}
+
+.listing-amenities ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listing-amenities li {
+  font-size: 1.3rem; /* Slightly larger font */
+  font-weight: 600; /* Semi-bold for better readability */
+  color: #ffffff; /* White text for visibility */
+  margin-bottom: 10px; /* Increase spacing for better layout */
+  padding-left: 32px; /* Ensure proper alignment with the larger bullet size */
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); /* Subtle glow for better readability */
+  line-height: 1.8; /* Enhance spacing for clarity */
+}
+
+.listing-amenities li::before {
+  content: "•";
+  color: #ffcc00; /* Gold bullet for a premium look */
+  font-size: 1.8rem; /* Adjust bullet size */
+  font-weight: bold; /* Make the bullet more pronounced */
+  position: absolute;
+  left: 5px; /* Align bullet closer to the text */
+  top: 50%; /* Align with the text vertically */
+  transform: translateY(-50%); /* Perfect vertical centering */
+}
+
+/* Book Now Button */
+.book-now-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.book-now-button:hover {
+  background: #0056b3;
+}
+
+/* Smaller Home Button */
+.home-button-small {
+  background: #4CAF50;
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  width: 100px;
+  bottom: 15px;
+  right: 245px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.home-button-small:hover {
+  background: #45a049;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .listing-title {
+    font-size: 2.5rem;
+  }
+  .listing-price {
+    font-size: 1.8rem;
+  }
+  .book-now-button {
+    width: 100%;
+  }
+  .home-button-small {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .listing-card {
+    padding: 15px;
+  }
+  .listing-title {
+    font-size: 2rem;
+  }
+  .listing-price {
+    font-size: 1.6rem;
+  }
+  .home-button-small {
+    font-size: 0.9rem;
+  }
+}

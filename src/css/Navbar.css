@@ -1,91 +1,91 @@
-
 .navbar {
-    display: flex;
-    position: fixed; /* Keep the navbar fixed */
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background-color: #1f3b4d; /* Deep Blue */
-    top: 0;
-    left: 0;
-    right: 0; /* Ensure it spans the full width */
-    height: 80px;
-    z-index: 100000000;
+  display: flex;
+  position: fixed; /* Keep the navbar fixed */
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #1f3b4d; /* Deep Blue */
+  top: 0;
+  left: 0;
+  right: 0; /* Ensure it spans the full width */
+  height: 80px;
+  z-index: 100000000;
 }
 
-  
-  
-  .navbar-logo {
-    font-size: 28px;
-    font-weight: bold;
-    font: 'Helvetica Neue';
-     left: 15px; 
-     position: absolute;
-    color: #f0c27b; /* Soft Gold */
-  }
-  
-  .navbar-logo:hover {
-    color: #f5d7a3; /* Lighter Gold on hover */
-    cursor: pointer;
-  }
-  
-  .navbar-links {
-    list-style-type: none;
-    position: absolute;
-    font: 'Arial';
-    left: 450px;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-  }
-  
-  .navbar-links li {
-    font-size: 20px;
-    color: #f4f4f9; /* Light Gray */
-    position: relative;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-links li:hover {
-    color: #f0c27b; /* Soft Gold on hover */
-    cursor: pointer; 
-  }
-  
-  /* Add underline effect on hover */
-  .navbar-links li::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #f0c27b;
-    transition: width 0.3s ease;
-  }
-  
-  .navbar-links li:hover::after {
-    width: 100%; /* line will appear till this width*/
-  }
-  
-  .navbar-user-menu button {
-    margin-left: 15px;
-    padding: 8px 18px;
-    border: 2px solid #f0c27b;
-    background-color: transparent;
-    color: #f0c27b;
-    border-radius: 30px;
-    font-size: 18px;
-    font: 'sans-serif';
-    font-weight: 500;
-  }
-  
-  .navbar-user-menu
-  {
-    position: absolute;
-    right:90px;
-  }
-  .navbar-user-menu button:hover {
-    background-color: #f0c27b;
-    color: #1f3b4d; /* Deep Blue text */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
+.navbar-logo {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Helvetica Neue'; /* Fixed font */
+  position: absolute;
+  left: 15px;
+  color: #f0c27b; /* Soft Gold */
+}
+
+.navbar-logo:hover {
+  color: #f5d7a3; /* Lighter Gold on hover */
+  cursor: pointer;
+}
+
+.navbar-links {
+  list-style-type: none;
+  position: absolute;
+  font-family: 'Arial'; /* Fixed font */
+  left: 450px;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+.navbar-links li {
+  font-size: 20px;
+  color: #f4f4f9; /* Light Gray */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li:hover {
+  color: #f0c27b; /* Soft Gold on hover */
+  cursor: pointer;
+}
+
+/* Add underline effect on hover */
+.navbar-links li::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f0c27b;
+  transition: width 0.3s ease;
+}
+
+.navbar-links li:hover::after {
+  width: 100%; /* Line will appear till this width */
+}
+
+/* User Menu Styling */
+.navbar-user-menu {
+  position: absolute;
+  right: 10px;  /* Move it further to the right */
+  top: 3px;     /* Move it a bit up */
+  display: flex; /* Use flexbox to align items horizontally */
+  gap: 15px; /* Space between the buttons */
+}
+
+.navbar-user-menu button {
+  padding: 8px 18px;
+  border: 2px solid #f0c27b;
+  background-color: transparent;
+  color: #f0c27b;
+  border-radius: 30px;
+  font-size: 18px;
+  font-family: 'sans-serif';
+  font-weight: 500;
+}
+
+.navbar-user-menu button:hover {
+  background-color: #f0c27b;
+  color: #1f3b4d; /* Deep Blue text */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

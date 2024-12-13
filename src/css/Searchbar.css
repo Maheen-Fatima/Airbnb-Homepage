@@ -40,7 +40,7 @@
 .search-bar button {
     z-index: 1;
     position: absolute; /* Keep the button absolute for positioning */
-    right:38%; /* Adjust position of the button as needed */
+    right: 38%; /* Adjust position of the button as needed */
     background-color: #f0c27b; /* Soft Gold background */
     color: #1f3b4d; /* Deep Blue text */
     border-radius: 50%; /* Make the button circular */
@@ -50,6 +50,7 @@
     display: flex; /* Use flexbox for centering */
     justify-content: center; /* Center icon horizontally */
     align-items: center; /* Center icon vertically */
+    top: -6px; /* Move the button up by 10px */
 }
 
 .search-bar button:hover {

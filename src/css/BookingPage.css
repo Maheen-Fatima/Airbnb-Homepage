@@ -1,0 +1,190 @@
+/* General Page Styling */
+.booking-page {
+    padding: 40px;
+    max-width: 600px; /* Reduced container size */
+    margin: 40px auto;
+    background: linear-gradient(135deg, #f7f7f7 0%, #e3f2fd 100%); /* Gradient background */
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    overflow: hidden; /* To prevent overflow */
+    animation: fadeIn 1s ease-out; /* Smooth fade-in effect */
+    border: 1px solid #ddd; /* Light border to add separation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Heading Styling */
+.booking-page h1 {
+    font-size: 2.5rem;
+    color: #21475f; /* Accent color */
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Letter spacing for more stylish look */
+}
+
+/* Booking Summary Styling */
+.booking-summary {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.property-details {
+    text-align: left;
+    color: #333;
+}
+
+.property-details h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.property-details p {
+    font-size: 1.2rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+.property-details p strong {
+    color: #21475f;
+    font-size: 1.5rem;
+}
+
+/* Form Styling */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #20455c; /* Accent color on focus */
+    box-shadow: 0 0 8px rgba(32, 69, 92, 0.4); /* Soft glow on focus */
+}
+
+/* Error Message Styling */
+.error {
+    color: #ff4d4d;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Button Styling */
+button {
+    padding: 15px 30px;
+    background-color: #21475f; /* Accent color */
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #1c3f53;
+    transform: translateY(-2px); /* Slight hover effect */
+}
+
+button:active {
+    background-color: #1a3443;
+    transform: translateY(0);
+}
+
+/* Home Button Styling */
+.home-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.home-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px); /* Slight hover effect */
+}
+
+.home-button:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .booking-page {
+        padding: 30px;
+    }
+
+    .form-group input {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .home-button {
+        width: 100%;
+    }
+}
+
+/* Additional Styles for Shadow and Box Effects */
+.booking-summary, form {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Deeper shadow for a floating effect */
+    border: 1px solid #e0e0e0; /* Light border for depth */
+}
+
+.booking-page {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(240, 240, 240, 0.9) 100%); /* Soft radial gradient for subtle elegance */
+    border-radius: 16px;
+}
